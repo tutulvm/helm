@@ -106,7 +106,7 @@ centralledger:
   # Default values for central-ledger.
   # This is a YAML-formatted file.
   # Declare variables to be passed into your templates.
-  centralledger-service:
+  centralledger_service:
     # Default values for central-ledger.
     # This is a YAML-formatted file.
 
