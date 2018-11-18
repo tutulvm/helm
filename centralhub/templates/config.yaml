@@ -10,5 +10,5 @@ metadata:
       heritage: {{ .Release.Service }}
 data:
   default.json: |
-    {{ .Values.config.default_json | replace "$service_port" (printf "%.0f" .Values.service.internalPort) | replace "$centralledger_api_port" (printf "%.0f" .Values.centralledger.containers.api.service.ports.api.internalPort) | replace "$centralledger_admin_port" (printf "%.0f" .Values.centralledger.containers.admin.service.ports.api.internalPort) | replace "$ingress_host" (.Values.ingress.hosts | first) | replace "$centralledger_host" $centralledgerHost }}
+    {{ .Values.config.default_json | replace "$service_port" (printf "%.0f" .Values.service.internalPort) | replace "$centralledger_api_port" (printf "%.0f" .Values.centralledger.centralledger_service.containers.api.service.ports.api.internalPort) | replace "$centralledger_admin_port" (printf "%.0f" .Values.centralledger.centralledger_service.containers.admin.service.ports.api.internalPort) | replace "$ingress_host" (.Values.ingress.hosts | first) | replace "$centralledger_host" $centralledgerHost }}
 
