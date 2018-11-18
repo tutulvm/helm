@@ -189,8 +189,8 @@ ml-api-adapter-service:
     hosts:
       api: ml-api-adapter.dev.wayaafrica.com
 
-    annotations:
-      nginx.ingress.kubernetes.io/rewrite-target: '/'
+    annotations: {}
+      # nginx.ingress.kubernetes.io/rewrite-target: '/'
       # kubernetes.io/ingress.class: nginx
       # kubernetes.io/tls-acme: "true"
     tls:
