@@ -187,10 +187,10 @@ ml-api-adapter-service:
     externalPath: /
     # Used to create an Ingress record.
     hosts:
-      api: ml-api-adapter.local
+      api: ml-api-adapter.dev.wayaafrica.com
 
-    annotations:
-      nginx.ingress.kubernetes.io/rewrite-target: '/'
+    annotations: {}
+      # nginx.ingress.kubernetes.io/rewrite-target: '/'
       # kubernetes.io/ingress.class: nginx
       # kubernetes.io/tls-acme: "true"
     tls:
@@ -383,7 +383,7 @@ ml-api-adapter-handler-notification:
     externalPath: /
     # Used to create an Ingress record.
     hosts:
-      api: ml-api-adapter-notification.local
+      api: ml-api-adapter-notification.dev.wayaafrica.com
 
     annotations:
       nginx.ingress.kubernetes.io/rewrite-target: '/'
