@@ -79,7 +79,7 @@ ingress:
   externalPath: /
 
   annotations:
-    # kubernetes.io/ingress.class: nginx
+    kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
 
   tls:
@@ -795,9 +795,9 @@ centralledger:
       hosts:
         api: central-ledger.dev.wayaafrica.com
         admin: central-ledger.dev.wayaafrica.com
-      annotations: {}
+      annotations:
         # nginx.ingress.kubernetes.io/rewrite-target: '/'
-        # kubernetes.io/ingress.class: nginx
+        kubernetes.io/ingress.class: nginx
         # kubernetes.io/tls-acme: "true"
       tls:
         # Secrets must be manually created in the namespace.
@@ -1486,9 +1486,9 @@ centralledger:
       # Used to create an Ingress record.
       hosts:
         api: central-ledger-transfer-prepare.dev.wayaafrica.com
-      annotations: {}
+      annotations:
         # nginx.ingress.kubernetes.io/rewrite-target: '/'
-        # kubernetes.io/ingress.class: nginx
+        kubernetes.io/ingress.class: nginx
         # kubernetes.io/tls-acme: "true"
       tls:
         # Secrets must be manually created in the namespace.
@@ -2177,9 +2177,9 @@ centralledger:
       # Used to create an Ingress record.
       hosts:
         api: central-ledger-transfer-position.dev.wayaafrica.com
-      annotations: {}
+      annotations:
         # nginx.ingress.kubernetes.io/rewrite-target: '/'
-        # kubernetes.io/ingress.class: nginx
+        kubernetes.io/ingress.class: nginx
         # kubernetes.io/tls-acme: "true"
       tls:
         # Secrets must be manually created in the namespace.
@@ -2867,9 +2867,9 @@ centralledger:
       # Used to create an Ingress record.
       hosts:
         api: central-ledger-transfer-get.dev.wayaafrica.com
-      annotations: {}
+      annotations:
         # nginx.ingress.kubernetes.io/rewrite-target: '/'
-        # kubernetes.io/ingress.class: nginx
+        kubernetes.io/ingress.class: nginx
         # kubernetes.io/tls-acme: "true"
       tls:
         # Secrets must be manually created in the namespace.
@@ -3558,9 +3558,9 @@ centralledger:
       # Used to create an Ingress record.
       hosts:
         api: central-ledger-transfer-fulfil.dev.wayaafrica.com
-      annotations: {}
+      annotations:
         # nginx.ingress.kubernetes.io/rewrite-target: '/'
-        # kubernetes.io/ingress.class: nginx
+        kubernetes.io/ingress.class: nginx
         # kubernetes.io/tls-acme: "true"
       tls:
         # Secrets must be manually created in the namespace.
@@ -4248,9 +4248,9 @@ centralledger:
       # Used to create an Ingress record.
       hosts:
         api: central-ledger-timeout.dev.wayaafrica.com
-      annotations: {}
+      annotations:
         # nginx.ingress.kubernetes.io/rewrite-target: '/'
-        # kubernetes.io/ingress.class: nginx
+        kubernetes.io/ingress.class: nginx
         # kubernetes.io/tls-acme: "true"
       tls:
         # Secrets must be manually created in the namespace.
@@ -4938,9 +4938,9 @@ centralledger:
         # Used to create an Ingress record.
         hosts:
           api: central-ledger-admin-transfer.dev.wayaafrica.com
-        annotations: {}
+        annotations:
           # nginx.ingress.kubernetes.io/rewrite-target: '/'
-          # kubernetes.io/ingress.class: nginx
+          kubernetes.io/ingress.class: nginx
           # kubernetes.io/tls-acme: "true"
         tls:
           # Secrets must be manually created in the namespace.
@@ -5008,7 +5008,7 @@ centralledger:
       externalPath: /
 
       annotations:
-        # kubernetes.io/ingress.class: nginx
+        kubernetes.io/ingress.class: nginx
 
       tls:
         # Secrets must be manually created in the namespace.
@@ -5095,7 +5095,7 @@ centralledger:
         externalPath: /
 
         annotations:
-          # kubernetes.io/ingress.class: nginx
+          kubernetes.io/ingress.class: nginx
 
         tls:
           # Secrets must be manually created in the namespace.
