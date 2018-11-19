@@ -708,8 +708,8 @@ centralledger-service:
     hosts:
       api: central-ledger.dev.wayaafrica.com
       admin: central-ledger.dev.wayaafrica.com
-    annotations:
-      nginx.ingress.kubernetes.io/rewrite-target: '/'
+    annotations: {}
+      # nginx.ingress.kubernetes.io/rewrite-target: '/'
       # kubernetes.io/ingress.class: nginx
       # kubernetes.io/tls-acme: "true"
     tls:
@@ -1397,8 +1397,8 @@ centralledger-handler-transfer-prepare:
     # Used to create an Ingress record.
     hosts:
       api: central-ledger-transfer-prepare.dev.wayaafrica.com
-    annotations:
-      nginx.ingress.kubernetes.io/rewrite-target: '/'
+    annotations: {}
+      # nginx.ingress.kubernetes.io/rewrite-target: '/'
       # kubernetes.io/ingress.class: nginx
       # kubernetes.io/tls-acme: "true"
     tls:
@@ -2086,8 +2086,8 @@ centralledger-handler-transfer-position:
     # Used to create an Ingress record.
     hosts:
       api: central-ledger-transfer-position.dev.wayaafrica.com
-    annotations:
-      nginx.ingress.kubernetes.io/rewrite-target: '/'
+    annotations: {}
+      # nginx.ingress.kubernetes.io/rewrite-target: '/'
       # kubernetes.io/ingress.class: nginx
       # kubernetes.io/tls-acme: "true"
     tls:
@@ -2774,8 +2774,8 @@ centralledger-handler-transfer-get:
     # Used to create an Ingress record.
     hosts:
       api: central-ledger-transfer-get.dev.wayaafrica.com
-    annotations:
-      nginx.ingress.kubernetes.io/rewrite-target: '/'
+    annotations: {}
+      # nginx.ingress.kubernetes.io/rewrite-target: '/'
       # kubernetes.io/ingress.class: nginx
       # kubernetes.io/tls-acme: "true"
     tls:
@@ -3463,8 +3463,8 @@ centralledger-handler-transfer-fulfil:
     # Used to create an Ingress record.
     hosts:
       api: central-ledger-transfer-position.dev.wayaafrica.com
-    annotations:
-      nginx.ingress.kubernetes.io/rewrite-target: '/'
+    annotations: {}
+      # nginx.ingress.kubernetes.io/rewrite-target: '/'
       # kubernetes.io/ingress.class: nginx
       # kubernetes.io/tls-acme: "true"
     tls:
@@ -4841,8 +4841,8 @@ centralledger-handler-admin-transfer:
         # Used to create an Ingress record.
         hosts:
           api: central-ledger-admin-transfer.dev.wayaafrica.com
-        annotations:
-          nginx.ingress.kubernetes.io/rewrite-target: '/'
+        annotations: {}
+          # nginx.ingress.kubernetes.io/rewrite-target: '/'
           # kubernetes.io/ingress.class: nginx
           # kubernetes.io/tls-acme: "true"
         tls:
