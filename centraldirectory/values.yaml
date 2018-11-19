@@ -189,7 +189,7 @@ centralenduserregistry:
     hosts:
       api: central-end-user-registry.dev.wayaafrica.com
     annotations:
-      # kubernetes.io/ingress.class: nginx
+      kubernetes.io/ingress.class: nginx
       # kubernetes.io/tls-acme: "true"
     tls:
       # Secrets must be manually created in the namespace.
@@ -307,7 +307,7 @@ mockpathfinder:
     hosts:
       api: mock-pathfinder.dev.wayaafrica.com
     annotations:
-      # kubernetes.io/ingress.class: nginx
+      kubernetes.io/ingress.class: nginx
       # kubernetes.io/tls-acme: "true"
     tls:
       # Secrets must be manually created in the namespace.
